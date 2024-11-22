@@ -1,0 +1,124 @@
+.header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+/* Mobile Navigation Sidebar */
+.mobile-navigation {
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.mobile-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-navigation a {
+    color: #333;
+    text-decoration: none;
+}
+
+.mobile-navigation a:hover {
+    color: #6b46c1;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: purple;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dropdown Menu */
+.mobile-navigation .block ul li {
+    padding: 10px 15px;
+}
+
+.mobile-navigation .block ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .header-mobile {
+        padding: 8px;
+    }
+
+    .hamburger {
+        width: 20px;
+        height: 15px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .search-icon img, 
+    .cart img {
+        height: 20px;
+    }
+
+    .mobile-navigation {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-mobile {
+        padding: 6px;
+    }
+
+    .hamburger {
+        width: 18px;
+        height: 12px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .search-icon img,
+    .cart img {
+        height: 18px;
+    }
+
+    .mobile-navigation {
+        width: 180px;
+    }
+}
+
+
+/* For Flexbox Layout */
+.mobile-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .mobile-header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}

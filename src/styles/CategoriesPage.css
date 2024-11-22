@@ -1,0 +1,145 @@
+.category-listing-page {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.sidebar-item:hover {
+    color: #ff5722;
+}
+
+.category-products-content {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.category-products-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.category-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.category-product-item {
+   
+    padding: 10px;
+    border-radius: 5px;
+ 
+    text-align: center;
+    cursor: pointer;
+    
+    color: #333;
+}
+
+.category-products-grid li{
+    font-size: 1em;
+    font-weight: 500;
+    color:  #8D9199;
+    list-style-type: none;
+    width: fit-content;
+     
+}
+.category-product-item:hover {
+    background-color: #ff5722;
+    color: white;
+}
+
+.sidebar-item {
+    cursor: pointer;
+    padding: 10px;
+    /* Add other necessary styles */
+  }
+  
+  .sidebar-item.active {
+    color: orange;
+    font-weight: 600;
+  }
+
+/* Base styles (for larger screens, typically desktop) */
+/* Already provided above */
+
+/* Media queries for responsiveness */
+
+/* Tablet view (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .category-listing-page {
+        margin-top: 90px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .category-products-content {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .category-products-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 items per row */
+        gap: 10px;
+    }
+}
+
+/* Mobile view (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .category-listing-page {
+        padding: 5px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar-item {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .category-products-content {
+        padding: 10px;
+    }
+
+    .category-products-grid {
+        grid-template-columns: 1fr; /* Single column layout for products */
+        gap: 15px;
+    }
+
+    .category-product-item {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,150 @@
+.add-address-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #999;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.form-group select {
+    width: 20%;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+.phone-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.phone-input {
+    flex-grow: 3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    font-size: 14px;
+}
+
+.country-code {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    /* Adjust to reduce the space below the error message */
+    display: block;
+    /* Ensures the error message takes up its own line */
+}
+
+.error {
+    border-color: red;
+}
+
+.form-error {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    /* Adjust the width as needed */
+    padding: 15px 0;
+    /* Padding for top and bottom */
+    background: #ff5c37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 40px auto 0 auto;
+    /* Centering the button horizontally */
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background: #e04b30;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+}

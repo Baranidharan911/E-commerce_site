@@ -1,0 +1,227 @@
+/* Base styles (for desktop) */
+.design-upload-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.design-upload-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px 0;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.design-upload-header h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.proceed-button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+}
+
+.cloud-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.upload-section h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.upload-section p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.file-upload {
+  display: none;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.upload-button {
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 90px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  margin-right: 50px;
+}
+
+.design-instructions {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  min-height: 70px;
+}
+
+.design-instructions::placeholder {
+  font-family: 'Manrope', sans-serif;
+}
+
+.uploaded-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.image-preview {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.delete-button:hover {
+  background: rgba(255, 0, 0, 1);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .design-upload-header {
+    margin-top: 90px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .design-upload-header h1 {
+    font-size: 1.2em;
+  }
+
+  .upload-section {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .upload-button,
+  .proceed-button {
+    padding: 10px;
+    font-size: 0.9em;
+    width: 100%; /* Make the button full width */
+    margin: 10px 0;
+  }
+
+  .cloud-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .uploaded-images {
+    justify-content: center;
+  }
+
+  .image-preview {
+    width: 80px;
+    height: 80px;
+  }
+
+  .back-button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .design-upload-header h1 {
+    font-size: 1.1em;
+  }
+
+  .upload-section {
+    padding: 15px;
+  }
+
+  .upload-button,
+  .proceed-button {
+    padding: 8px;
+    font-size: 0.8em;
+  }
+
+  .cloud-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .image-preview {
+    width: 60px;
+    height: 60px;
+  }
+
+  .back-button {
+    font-size: 1em;
+  }
+}

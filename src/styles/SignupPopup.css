@@ -1,0 +1,145 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    max-height: 90vh; /* Ensure the popup does not exceed viewport height */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .popup-header {
+    margin-bottom: 20px;
+  }
+  
+  .popup-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .google-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width:90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-signin img {
+    margin-right: 10px;
+  }
+  
+  .popup-body p {
+    margin: 10px 0;
+  }
+  
+  .popup-body label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .popup-body input,
+  .popup-body select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+     margin-bottom: 20px; 
+  }
+  
+  .radio-group label {
+    margin-right: 10px;
+  }
+  
+
+  .sign-up-btn {
+    background-color: #FB5711;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95%;
+     margin-bottom: 20px; 
+  }
+
+  .form-group {
+    /* margin-bottom: 20px; */
+    text-align: left;
+  }
+  .radio-group{
+    display: flex;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .resend-otp {
+    margin-top: 10px;
+    color: #ff4500;
+    cursor: pointer;
+  }
+  
+  .login-link {
+ 
+    color:  #829AB1;
+    font-size: 0.8em;
+  }
+  .login-link a{
+   color:  #FB5711;
+   text-decoration: none;
+ }
+  @media (max-width: 768px) {
+    .popup-content {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
